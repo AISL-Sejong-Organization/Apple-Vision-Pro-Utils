@@ -1,1 +1,6 @@
-__pychache__
+*.pyc
+__pychache__/
+avp_stream/__pycache__/
+avp_stream/grpc_msg/__pycache__/
+avp_stream/utils/__pycache__/
+data/

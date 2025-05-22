@@ -104,10 +104,10 @@ class MatplotlibVisualizerEnv:
 
     def render(self, transformation: Dict[str, torch.Tensor]):
         self.ax.cla()
-        # 축 범위 조정: Z축 범위 더 낮게 설정
-        self.ax.set_xlim(0.0, 0.3)
-        self.ax.set_ylim(-0.2, 0.2)
-        self.ax.set_zlim(0.5, 1.1)
+        # 축 범위 조정
+        self.ax.set_xlim(-0.7, 0.7)
+        self.ax.set_ylim(-0.7, 0.7)
+        self.ax.set_zlim(0.0, 2.0)
         self.ax.set_title("3D Hand Pose")
         self.ax.set_xlabel("X")
         self.ax.set_ylabel("Y")
@@ -183,7 +183,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--ip", type=str, required=False, default="192.168.0.17")
+    parser.add_argument("--ip", type=str, required=False, default="192.168.0.70")
     parser.add_argument("--record", action="store_true")
     parser.add_argument("--follow", action="store_true")
     args = parser.parse_args()
