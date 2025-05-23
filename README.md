@@ -56,3 +56,7 @@ python visualize_handpose.py --load <NPZ_FILE_PATH>
 
 # Figure 1. 3D hand & head pose visualization(handpose.py)
 ![handpose](assets/handpose.png)
+
+## Video 1. Gesture Teleop with Apple Vision Pro(Isaac Sim)
+
+[![Gesture Teleop with Apple Vision Pro](https://img.youtube.com/vi/OGcR0E74Dlo/0.jpg)](https://youtu.be/OGcR0E74Dlo)
